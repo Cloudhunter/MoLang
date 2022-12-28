@@ -14,7 +14,6 @@ repositories {
 
 dependencies {
     implementation("com.fasterxml.jackson.core:jackson-databind:2.12.3")
-    implementation("com.bedrockk:molang:1.0-SNAPSHOT")
     compileOnly("org.projectlombok:lombok:1.18.20")
     annotationProcessor("org.projectlombok:lombok:1.18.20")
 
