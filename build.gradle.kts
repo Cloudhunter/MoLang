@@ -39,14 +39,4 @@ publishing {
             from(components["java"])
         }
     }
-    repositories {
-        maven {
-            name = "BedrockkPackages"
-            url = uri("https://maven.pkg.github.com/bedrockk/MoLang")
-            credentials {
-                username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USER")
-                password = project.findProperty("gpr.token") as String? ?: System.getenv("GITHUB_TOKEN")
-            }
-        }
-    }
 }
